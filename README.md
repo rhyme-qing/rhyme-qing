@@ -11,8 +11,5 @@
       <p>If you have an interest in non-profit networks, you can visit NPO.NETWORK to join us.</p>
       <p>You can contact me via email at rhyme@npo.network</p>
     </div>
-    <div style="flex: 1;height: 100%;">
-      <img src="https://raw.githubusercontent.com/rhyme-qing/picture-bed/main/outher/202301211246142.png"/>
-    </div>
   </div>
 </p>
