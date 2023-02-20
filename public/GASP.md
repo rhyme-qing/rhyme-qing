@@ -65,8 +65,8 @@ sticky 部分的实现主要有导航栏、子导航、侧栏、内容等四个�
 |---------------------|-------------------------------------|
 | trigger             | 当 `scroller-start` 到此的时候触发（Class 类） |
 | endTrigger          | 当 `scroller-end` 到此的时候触发（Class 类）   |
-| onEnter/onEnterBack |  触发和未触发时的 `gasp.to`                 |
-|                     |                                     |
+| onEnter/onEnterBack | 触发和未触发时的 `gasp.to`                  |
+
 那么基于上述所列举的方法，就可以实现上述的需求，并且根据下述的这套 Code Snips[^7] 可以进行延申至完成这个项目的开发需求：
 
 ```javascript
