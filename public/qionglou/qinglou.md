@@ -30,6 +30,7 @@ tag:
 |          | unit  | 0%      | String | 自定义单位（%.px……) |
 |          | on    |         |        |               |
 
+# fine-header
 ```javascript
 <script setup>  
 import fineHeader from "@qionglou/components/src/fineHeader.vue";  
@@ -64,3 +65,63 @@ defineExpose({ customBreakpoints });
   
 </style>
 ```
+
+| Name        | Props      | Default | type   | Info |
+|-------------|------------|---------|--------|------|
+| fine-header | gap        | 0       | Number | 间距   |
+|             | column     |         | Number | 列    |
+|             | breakpoint |         | Object |      |
+
+# fine-main
+
+```javascript
+<script setup>  
+import fineMain from "@qionglou/components/src/fineMain.vue";  
+import fineHeader from "@qionglou/components/src/fineHeader.vue";  
+  
+const customBreakpoints = {  
+  320: 1,  
+  482: 2,  
+  648: 3,  
+  768: 4,  
+  1024: 5,  
+  2560: 2  
+};  
+defineExpose({ customBreakpoints });  
+</script>  
+  
+<template>  
+  <fine-header column="2" :breakpoint="customBreakpoints" >  
+    <div>  
+      <fine-main site="left" layout="left">左侧侧内容</fine-main>  
+    </div>  
+    <div>  
+      <fine-main site="right" layout="right">右侧侧内容</fine-main>  
+    </div>  
+  </fine-header>  
+</template>  
+  
+<style>
+```
+
+| Name      | Props  | Default | type   | Info |
+|-----------|--------|---------|--------|------|
+| fine-main | layout | default | String | 布局属性 |
+|           | wide   | auto    | String | 宽度   |
+|           |        | auto    | String | 高度   |
+
+# fine-fix
+
+```javascript
+<template>
+    <fine-main wide=“100%” high="15vw" style="border: 1px solid red">
+        <fine-fix position="bottom"><div>bottom</div></fine-fix>
+    </fine-mian>
+</template>
+```
+
+| Name     | Props    | Default | type   | Info |
+|----------|----------|---------|--------|------|
+| fine-fix | position | top     | String | 固定位置 |
+|          | z-index  | 100     | Number |      |
+
